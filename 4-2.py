@@ -1,13 +1,21 @@
-i = 1
-while ( i<11):
-	print (i, end='\t')
-	i += 1
+import random
+while True:
+  num=random.randint(0,100)
+  if (num%2==0):
+    print("{0} is an even number".format(num))
+    break;
+  if (num%2 != 0):
+    print("{0} is an odd number".format(num))
 
 
 
-i=input('Enter a value= ')
-print ("You have entered {0}".format(i))
-while (i!= 'q'):
-  i=input('Enter a value= ')
-  print ("You have entered {0}".format(i))
-print("You have entered q the loop is now over")
+
+
+import random
+i=0
+while (i>=0 and i<=100):
+  num=random.randint(0,100)
+  i += num
+  print(i)
+  if (i>100):
+    print("The summation {0} is greater than 100".format(i))
