@@ -15,12 +15,14 @@ i=0
 num=0
 while (i<10):
   nums=random.randint(0,100)
-  print (nums, end=',')
-  nums+=num
+  print(nums)
+  num+=nums
   if (num>100):
     print("The total is {0}".format(num))
     break
   i += 1
+else:
+    print("The total {0} is <= 100".format(num))
 
 
 for i in range(0,3):
