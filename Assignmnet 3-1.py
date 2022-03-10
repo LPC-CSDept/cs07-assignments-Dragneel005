@@ -24,6 +24,9 @@ m= random.randint(0, 100)
 print (m)
 if m==n==u:
   print ("All Same", n,u,m)
+
+# in the case of two same values, you should figure out which two values are same.
+# For example, m and n are same or so on.
 elif m==n or n==u or m==u:
   print ("Two are the same", m, n, u)
 elif m!=n or n!=u or m!=u:
@@ -41,6 +44,13 @@ m= random.randint(0, 100)
 print (m)
 if n<u and n<m:
   print ("The Smallest Number is ", n)
+
+# when we find the smallest number, I think we do not need to consider the same values
+# just two more cases like your line 45
+# if u<n and u<m:
+
+# if m<u and m<n:
+
   if n==u and n<m:
     print ("The Smallest Numbers are ", n,u)
   if n==m and n<u:
@@ -51,3 +61,5 @@ if u<n and u<m:
     print("The Smallest Numbers are ", u, m)
 if m<n and m<u:
   print ("The Smallest Number is ", m)
+
+#=
