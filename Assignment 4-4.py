@@ -6,7 +6,9 @@ while True:
   if (pre <= cn):
     print ('The current number {0} is greater than the prevous number {1}' .format(cn, pre))
     break
-
+# To save the current number as a prev.
+# You should add one line after if stmt.
+  # pre = cn
 
 
 
@@ -26,5 +28,6 @@ else:
 
 
 for i in range(0,3):
-	for j in range(i,3):
+	for j in range(i,3): 
 		print (j, i)
+    # not the expected output. 
